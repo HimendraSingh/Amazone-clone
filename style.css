@@ -314,71 +314,99 @@ ul a {
     .navbar {
         height: auto;
         min-height: 60px;
-        flex-wrap: wrap;
+        flex-direction: column;
         padding: 10px;
-        gap: 10px;
+        gap: 12px;
+    }
+
+    .nav-logo, .nav-logo .logo {
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .nav-search {
         width: 100%;
         order: 3;
+        margin-top: 5px;
     }
 
     .panel {
         height: auto;
         padding: 10px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
     }
 
     .panel-ops {
         width: 100%;
-        text-align: center;
     }
 
     .panel-ops p {
         display: inline-block;
-        margin: 5px 10px;
+        margin: 6px 10px;
     }
 
     .hero-section {
-        height: 250px;
+        height: 200px;
     }
 
     .hero-msg {
         width: 90%;
-        margin-bottom: 20px;
-        text-align: center;
-        padding: 0 10px;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        font-size: 0.8rem;
     }
 
     .box {
         width: 45%;
-        margin: 8px 2%;
-        height: auto;
+        height: auto; 
+        min-height: 250px;
+        margin: 10px 1%;
     }
 
     .box-image1, .box-image2, .box-image3, .box-image4, 
     .box-image5, .box-image6, .box-image7, .box-image8 {
-        height: 150px;
+        height: 160px;
+        background-size: contain;
     }
 
     .foot-panel2 {
         height: auto;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px 20px;
     }
 
     ul {
-        margin-top: 15px;
-        padding: 0;
+        margin-top: 0;
     }
 }
 
 @media (max-width: 480px) {
+    .navbar {
+        gap: 8px;
+    }
+
+    .add-icon, .nav-cart, .nav-second {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
     .box {
         width: 92%;
         margin: 10px auto;
+        min-height: auto;
+    }
+
+    .box-image1, .box-image2, .box-image3, .box-image4, 
+    .box-image5, .box-image6, .box-image7, .box-image8 {
+        height: 200px;
+    }
+
+    .foot-panel2 {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
