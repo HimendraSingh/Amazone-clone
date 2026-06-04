@@ -36,41 +36,49 @@
     border: 2px solid white;
 }
 
-.add-first{
-      color: #cccccc;
-      font-size: 0.70rem;
-      margin-left: 15px;
+.add-first {
+    color: #cccccc;
+    font-size: 0.70rem;
+    margin-left: 15px;
 }
-.add-second{
+
+.add-second {
     font-size: 0.90rem;
     margin-left: 3px;
 }
-.add-icon{
+
+.add-icon {
     display: flex;
     align-items: center;
 }
-.nav-search{
+
+.nav-search {
     display: flex;
     justify-content: space-evenly;
     background-color: pink;
     width: 620px;
     height: 40px;
     border-radius: 4px;
+    transition: border 0.2s ease;
 }
-.search-select{
+
+.search-select {
     background-color: #f3f3f3;
     width: 50px;
     text-align: center;
-    border-top-left-radius:4px ;
+    border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border: none;
 }
-.search-input{
+
+.search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
+    padding-left: 5px;
 }
-.Search-icon{
+
+.Search-icon {
     width: 45px;
     height: 100%;
     display: flex;
@@ -78,29 +86,34 @@
     align-items: center;
     font-size: 1.2rem;
     background-color: #febd68;
-    border-top-right-radius:4px ;
+    border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    color: #0f1111 ;
+    color: #0f1111;
 }
-.nav-search:hover{
+
+.nav-search:hover {
     border: 2px solid orange;
 }
 
-span{
+span {
     font-size: 0.7rem;
 }
-.nav-second{
+
+.nav-second {
     font-size: 0.85rem;
     font-weight: 700;
 }
-.nav-cart i{
+
+.nav-cart i {
     font-size: 30px;
 }
-.nav-cart{
+
+.nav-cart {
     font-size: 0.85rem;
     font-weight: 700;
 }
-.panel{
+
+.panel {
     height: 40px;
     background-color: #222f3d;
     display: flex;
@@ -108,29 +121,34 @@ span{
     color: white;
     justify-content: space-evenly;
 }
-    
-.panel-ops p{
-     display: inline;
-     margin: 15px;
+
+.panel-ops p {
+    display: inline;
+    margin: 15px;
 }
-.panel-ops{
+
+.panel-ops {
     width: 70%;
     font-size: 0.85rem;
 }
-.panel-deals{
+
+.panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
 }
+
 .hero-section {
-    background-image:url('screenpicture.jpg');
+    background-image: url('screenpicture.jpg');
     height: 350px;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
-.hero-msg{
+
+.hero-msg {
     background-color: white;
     height: 40px;
     display: flex;
@@ -138,17 +156,19 @@ span{
     justify-content: center;
     font-size: 0.85rem;
     width: 80%;
-    margin-bottom: 50px;  
+    margin-bottom: 50px;
 }
-    
-.hero-msg a{
+
+.hero-msg a {
     color: #007185;
 }
+
 .shop-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
+    padding: 10px;
 }
 
 .box {
@@ -162,70 +182,33 @@ span{
     margin: 8px;
 }
 
-.box-image1 {
-    height: 220px;
-    background-image: url('dress-cloths.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.box h2{
+.box h2 {
     font-size: 14px;
     margin: 5px 0 10px;
 }
-.box-image2 {
+
+.box-image1, .box-image2, .box-image3, .box-image4, 
+.box-image5, .box-image6, .box-image7, .box-image8 {
     height: 220px;
-    background-image:url('beauty.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-.box-image3 {
-    height: 220px;
-    background-image:url('Electronics.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.box-image4 {
-    height: 220px;
-    background-image: url('dog.jpeg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.box-image5 {
-    height: 220px;
-    background-image:url('color.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.box-image6 {
-    height: 220px;
-    background-image:url('toothpaste.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.box-image7 {
-    height: 220px;
-    background-image:url('Bags.jpeg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.box-image8 {
-    height: 220px;
-    background-image:url('Phone.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-footer{
+
+.box-image1 { background-image: url('dress-cloths.png'); }
+.box-image2 { background-image: url('beauty.jpg'); }
+.box-image3 { background-image: url('Electronics.jpg'); }
+.box-image4 { background-image: url('dog.jpeg'); }
+.box-image5 { background-image: url('color.jpg'); }
+.box-image6 { background-image: url('toothpaste.jpg'); }
+.box-image7 { background-image: url('Bags.jpeg'); }
+.box-image8 { background-image: url('Phone.jpg'); }
+
+footer {
     margin-top: 15px;
 }
-.foot-panel1{
+
+.foot-panel1 {
     background-color: #37475a;
     color: white;
     height: 50px;
@@ -234,23 +217,34 @@ footer{
     align-items: center;
     font-size: 0.86rem;
 }
-.foot-panel2{
+
+.foot-panel2 {
     background-color: #222f3d;
     color: white;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
 }
+
 ul {
     margin-top: 20px;
     list-style: none;
+    padding: 0;
 }
-ul  a {
-    display:block;
+
+ul a {
+    display: block;
     font-size: 0.85rem;
     margin-top: 10px;
+    color: #dddddd;
+    text-decoration: none;
 }
-.foot-panel3{
+
+ul a:hover {
+    text-decoration: underline;
+}
+
+.foot-panel3 {
     background-color: #222f3d;
     color: white;
     border-top: 0.5px solid white;
@@ -259,12 +253,7 @@ ul  a {
     justify-content: center;
     align-items: center;
 }
-.logo{
-    background-image: url('amazonlogo.png');
-     background-size: cover;
-    height: 40px;
-    width: 100px;
-}
+
 .foot-panel4 {
     background-color: #0f1111;
     color: white;
@@ -274,81 +263,96 @@ ul  a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px; 
+    padding: 30px 0px;
 }
 
 .pages {
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 .copyright {
     padding: 0;
 }
 
+@media (max-width: 992px) {
+    .nav-search {
+        width: 50%;
+    }
+    .box {
+        width: 45%;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
-        height: auto; 
-        flex-wrap: wrap;
-        padding: 10px;
-        justify-content: space-between;
-    }
-
-    .nav-search {
-        width: 100%; 
-        order: 5;    
-        margin-top: 10px;
-    }
-
-    .panel-ops {
-        display: none; 
+        height: auto;
+        flex-direction: column;
+        padding: 12px;
+        gap: 12px;
     }
     
+    .nav-search {
+        width: 100%;
+        order: 3;
+    }
+
     .panel {
-        justify-content: space-between;
-        padding: 0 15px;
+        height: auto;
+        padding: 10px 5px;
+    }
+    .panel-ops {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 5px;
+    }
+    .panel-ops p {
+        margin: 0 10px;
+    }
+    .panel-deals {
+        display: none;
     }
 
     .hero-section {
         height: 200px;
     }
-
     .hero-msg {
-        width: 95%;
+        width: 90%;
         font-size: 0.75rem;
-        margin-bottom: 15px;
-        height: auto;
-        padding: 5px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
     .box {
-        width: 45%; 
+        width: 46%;
         height: auto;
-        min-width: 140px;
-        margin: 5px;
+        padding: 12px 8px;
     }
-
     .box-image1, .box-image2, .box-image3, .box-image4, 
     .box-image5, .box-image6, .box-image7, .box-image8 {
-        height: 140px; 
+        height: 150px;
     }
 
     .foot-panel2 {
         height: auto;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 20px;
-        text-align: center;
+        padding: 25px 0;
+        gap: 20px;
     }
-    
     ul {
-        margin-top: 15px;
-        padding: 0;
+        margin-top: 5px;
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .box {
-        width: 95%; 
+        width: 100%;
+        margin: 10px 0;
+    }
+    .navbar {
+        gap: 8px;
     }
 }
