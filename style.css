@@ -276,7 +276,7 @@ ul a:hover {
 
 @media (max-width: 992px) {
     .nav-search {
-        width: 50%;
+        width: 40%;
     }
     .box {
         width: 45%;
@@ -286,11 +286,37 @@ ul a:hover {
 @media (max-width: 768px) {
     .navbar {
         height: auto;
-        flex-direction: column;
-        padding: 12px;
-        gap: 12px;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: space-between;
+        row-gap: 12px;
     }
     
+    .nav-logo {
+        order: 1;
+        width: auto;
+    }
+    
+    .nav-cart {
+        order: 2;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .border:nth-child(2),
+    .border:nth-child(3) {
+        order: 4;
+        width: 48%;
+        font-size: 0.8rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .add-first {
+        margin-left: 0;
+    }
+
     .nav-search {
         width: 100%;
         order: 3;
@@ -351,8 +377,5 @@ ul a:hover {
     .box {
         width: 100%;
         margin: 10px 0;
-    }
-    .navbar {
-        gap: 8px;
     }
 }
