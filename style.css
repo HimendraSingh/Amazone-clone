@@ -343,18 +343,28 @@ ul a:hover {
     .hero-section {
         height: 200px;
     }
+    
     .hero-msg {
         width: 90%;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         margin-bottom: 20px;
         text-align: center;
+        height: auto;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+    .hero-msg a {
+        font-weight: 700;
     }
 
     .box {
         width: 46%;
         height: auto;
+        min-height: 250px;
         padding: 12px 8px;
     }
+    
     .box-image1, .box-image2, .box-image3, .box-image4, 
     .box-image5, .box-image6, .box-image7, .box-image8 {
         height: 150px;
@@ -377,5 +387,7 @@ ul a:hover {
     .box {
         width: 100%;
         margin: 10px 0;
+        height: auto;
+        min-height: 250px;
     }
 }
